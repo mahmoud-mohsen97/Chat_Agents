@@ -4,7 +4,7 @@ A powerful dual-agent system combining **Agentic RAG** for document processing a
 
 ## 🏗️ System Architecture
 
-![Project Architecture](https://raw.githubusercontent.com/user/repo/main/docs/project-architecture.png)
+![Project Architecture](https://github.com/user-attachments/assets/3c2f5c95-8e2b-450f-a11c-a9575d456c00)
 
 The system consists of three main components:
 - **Streamlit Frontend**: Interactive user interface
@@ -30,7 +30,8 @@ The system consists of three main components:
 ## 🔧 Agent Architectures
 
 ### Agentic RAG Workflow
-![Agentic RAG Architecture](https://raw.githubusercontent.com/user/repo/main/docs/agentic-rag-architecture.png)
+![Agentic RAG Architecture](https://github.com/user-attachments/assets/ebacb6e1-6587-4d15-8722-40a0659560c6)
+
 
 **Processing Flow:**
 1. **Question Routing**: Determines if query relates to uploaded documents
@@ -41,7 +42,7 @@ The system consists of three main components:
 6. **Web Search Fallback**: Searches online when documents are insufficient
 
 ### Deep Researcher Workflow
-![Deep Researcher Architecture](https://raw.githubusercontent.com/user/repo/main/docs/researcher-architecture.png)
+![Deep Researcher Architecture](https://github.com/user-attachments/assets/4a659306-45f3-4313-9cd0-ce4b0fe9315c)
 
 **Research Process:**
 1. **Task**: Accepts user research query
