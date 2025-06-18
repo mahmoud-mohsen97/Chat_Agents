@@ -88,4 +88,4 @@ coverage.xml
 
 # PDF files (if they contain sensitive data)
 # Uncomment if you don't want to track PDF files:
-# *.pdf
+*.pdf
