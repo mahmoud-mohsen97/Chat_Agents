@@ -48,13 +48,13 @@ The system consists of three main components:
 1. **Task**: Accepts user research query
 2. **Planner**: Develops specialized researcher persona and strategy
 3. **Researcher**: Executes 4 targeted web searches using different angles
-4. **Publisher**: Synthesizes findings into comprehensive markdown report
+4. **Publisher**: Synthesizes findings into a comprehensive markdown report
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 - Docker and Docker Compose
-- API Keys: Openai, Google Gemini, Cohere, and Tavily API Key
+- API Keys: OpenAI, Google Gemini, Cohere, and Tavily
 
 ### Setup
 
@@ -67,11 +67,16 @@ The system consists of three main components:
 2. **Configure Environment**
    ```bash
    cp env.template .env
-   # Edit .env with your API keys:
+   # Required API Keys
    # OPENAI_API_KEY=your_openai_api_key_here
    # GOOGLE_API_KEY=your_google_api_key_here
    # COHERE_API_KEY=your_cohere_api_key_here
    # TAVILY_API_KEY=your_tavily_api_key_here
+
+   #  Optional Configuration
+   # QDRANT_HOST=qdrant
+   # QDRANT_PORT=6333
+   # BACKEND_URL=http://backend:8000
    ```
 
 3. **Launch Application**
@@ -109,7 +114,7 @@ GET    /api/researcher/status            # Service health check
 - **LangGraph**: AI agent orchestration framework
 - **LangChain**: LLM application development framework
 - **Qdrant**: Vector database for document embeddings
-- **Google AI**: Language model provider
+- **Google/ OpenAI / Cohere **: LLM & embedding provider
 - **Tavily**: Web search API
 
 ### Frontend
@@ -170,27 +175,6 @@ Chat_Agents/
 - **Download**: Export reports as markdown files
 - **Metadata**: See word count, search results, and timestamps
 
-## ⚙️ Configuration
-
-### Environment Variables
-```bash
-# Required API Keys
-OPENAI_API_KEY=your_openai_api_key_here
-GOOGLE_API_KEY=your_google_api_key_here
-COHERE_API_KEY=your_cohere_api_key_here
-TAVILY_API_KEY=your_tavily_api_key_here
-
-# Optional Configuration
-QDRANT_HOST=qdrant
-QDRANT_PORT=6333
-BACKEND_URL=http://backend:8000
-```
-
-### Docker Configuration
-- **Backend Port**: 8000
-- **Frontend Port**: 8501  
-- **Qdrant Port**: 6333
-- **Shared Volumes**: Storage, Qdrant data
 
 ## 🔍 Key Features in Detail
 
@@ -231,17 +215,6 @@ curl http://localhost:8000/api/researcher/status
 3. Commit changes (`git commit -m 'Add amazing feature'`)
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open Pull Request
-
-
-## 🙏 Acknowledgments
-
-- **LangChain**: For the powerful LLM application framework
-- **LangGraph**: For agent orchestration capabilities
-- **Streamlit**: For the intuitive frontend framework
-- **FastAPI**: For the high-performance backend framework
-- **Qdrant**: For vector database functionality
-- **Google AI**: For language model services
-- **Tavily**: For web search capabilities
 
 ---
 
