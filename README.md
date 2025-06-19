@@ -22,7 +22,7 @@ The system consists of three main components:
 
 ### 🔍 Deep Researcher Agent  
 - **Autonomous Research**: Generate comprehensive reports on any topic
-- **Multi-Query Search**: Creates 4 specialized search queries per research task
+- **Multi-Query Search**: Creates multiple specialized search queries per research task
 - **Persona-Based Planning**: Develops research personas for targeted investigations
 - **Web Search Integration**: Powered by Tavily API for real-time information
 - **Structured Output**: Generates professional markdown reports with references
@@ -47,7 +47,7 @@ The system consists of three main components:
 **Research Process:**
 1. **Task**: Accepts user research query
 2. **Planner**: Develops specialized researcher persona and strategy
-3. **Researcher**: Executes 4 targeted web searches using different angles
+3. **Researcher**: Executes multiple targeted web searches using different angles
 4. **Publisher**: Synthesizes findings into a comprehensive markdown report
 
 ## 🚀 Quick Start
@@ -186,7 +186,7 @@ Chat_Agents/
 
 ### Advanced Research Capabilities
 - **Dynamic Query Generation**: Creates multiple search perspectives
-- **Comprehensive Coverage**: 4 targeted searches per research topic
+- **Comprehensive Coverage**: Multiple targeted searches per research topic
 - **Professional Output**: Structured markdown reports with citations
 - **Persistent Storage**: Automatic report saving and management
 
